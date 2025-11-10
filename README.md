@@ -22,7 +22,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 |----------------------|------------|
 | **SmartInsight/** | Diretório raiz do projeto |
 | ├── **app/** | Contém os módulos principais da aplicação |
-| │ ├── `main.py` | Ponto de entrada da aplicação (Streamlit) |
+| │ ├── `main.py` | Ponto de entrada da aplicação (Flask) |
 | │ ├── `dashboard.py` | Visualização de gráficos e relatórios |
 | │ ├── `insights.py` | Geração automática de insights com IA |
 | │ ├── `upload.py` | Upload e validação de datasets |
@@ -42,7 +42,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 | Categoria | Ferramentas |
 |------------|-------------|
 | **Linguagem** | Python 3.11+ |
-| **Interface** | Streamlit |
+| **Interface** | Flask |
 | **Banco de Dados** | PostgreSQL |
 | **Análise de Dados** | Pandas, NumPy |
 | **Visualização** | Plotly, Altair |
@@ -55,7 +55,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 
 ### 1️⃣ Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/SmartInsight.git
+git clone https://github.com/PedroLemosMariano/SmartInsight.git
 cd SmartInsight
 ```
 
@@ -80,26 +80,24 @@ DB_PORT=5432
 
 ### 5️⃣ Executar o sistema
 ```bash
-streamlit run app/main.py
+Flask run app/main.py
 ```
 
 ---
 
 ## 📈 Exemplo de Uso
-```
-Faça login no sistema.
-Faça upload de um arquivo de vendas (vendas.csv).
-O SmartInsight gera automaticamente gráficos de desempenho.
-Clique em "Gerar Insights" para obter uma análise textual com IA.
-Exporte o relatório completo em PDF ou Excel.
-```
+1. Faça login no sistema.
+2. Faça upload de um arquivo de vendas (vendas.csv).
+3. O SmartInsight gera automaticamente gráficos de desempenho.
+4. Clique em "Gerar Insights" para obter uma análise textual com IA.
+5. Exporte o relatório completo em PDF ou Excel.
+
 ---
 
 ## 💡 Exemplos de Insights Automáticos
-```
-"As vendas no setor Sul aumentaram 22% em setembro, impulsionadas pelo novo produto lançado no início do mês."
-"O faturamento total caiu 8% em outubro, principalmente devido à queda nas vendas da categoria eletrônicos."
-```
+
+- "As vendas no setor Sul aumentaram 22% em setembro, impulsionadas pelo novo produto lançado no início do mês."
+- "O faturamento total caiu 8% em outubro, principalmente devido à queda nas vendas da categoria eletrônicos."
 
 ---
 
