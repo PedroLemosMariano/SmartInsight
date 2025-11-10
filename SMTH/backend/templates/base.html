@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <header>
-        <h1>🧠 SmartInsight</h1>
+<body class="bg-[#f3f3f3] flex flex-col min-h-screen">
+    <header class="bg-[#ffffff] shadow-md h-[60px]">
+        <h1 class=" text-black text-4xl">GatsBI</h1>
         <nav>
-            <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/login">Entrar</a>
+            <a class=" text-black text-xl" href="/">Início</a>
+            <a class=" text-black text-xl" href="/sobre">Sobre</a>
+            <a class=" text-black text-xl" href="/login">Entrar</a>
         </nav>
     </header>
+    <div class="bg-gradient-to-r from-[#0a4a90] to-[#2f87e8] h-[400px]">
 
-    <main>
+    </div>
+
+    <main class="flex-1">
         {% block content %}{% endblock %}
     </main>
 
-    <footer>
+    <footer class="bg-[#444444] mt-auto">
         <p>© 2025 SmartInsight - Análise inteligente de dados</p>
     </footer>
 </body>
