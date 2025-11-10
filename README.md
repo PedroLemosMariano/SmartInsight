@@ -18,24 +18,22 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 
 ## 🧩 Arquitetura do Projeto
 
-```
-SmartInsight/
-│
-├── app/
-│ ├── main.py # Ponto de entrada da aplicação (Streamlit)
-│ ├── dashboard.py # Visualização de gráficos e relatórios
-│ ├── insights.py # Geração automática de insights com IA
-│ ├── upload.py # Upload e validação de datasets
-│ ├── export.py # Exportação de relatórios em PDF/Excel
-│ └── utils/
-│ ├── db.py # Conexão e operações com PostgreSQL
-│ ├── charts.py # Criação de gráficos dinâmicos
-│ └── preprocess.py # Limpeza e padronização dos dados
-│
-├── data/ # Armazena datasets temporários
-├── requirements.txt # Dependências do projeto
-└── README.md
-```
+| Diretório / Arquivo | Descrição |
+|----------------------|------------|
+| **SmartInsight/** | Diretório raiz do projeto |
+| ├── **app/** | Contém os módulos principais da aplicação |
+| │ ├── `main.py` | Ponto de entrada da aplicação (Streamlit) |
+| │ ├── `dashboard.py` | Visualização de gráficos e relatórios |
+| │ ├── `insights.py` | Geração automática de insights com IA |
+| │ ├── `upload.py` | Upload e validação de datasets |
+| │ ├── `export.py` | Exportação de relatórios em PDF/Excel |
+| │ └── **utils/** | Funções auxiliares e utilitárias |
+| │ &nbsp;&nbsp;&nbsp;&nbsp;├── `db.py` | Conexão e operações com PostgreSQL |
+| │ &nbsp;&nbsp;&nbsp;&nbsp;├── `charts.py` | Criação de gráficos dinâmicos |
+| │ &nbsp;&nbsp;&nbsp;&nbsp;└── `preprocess.py` | Limpeza e padronização dos dados |
+| **data/** | Armazena datasets temporários |
+| **requirements.txt** | Lista de dependências do projeto |
+| **README.md** | Documentação principal do repositório |
 
 ---
 
@@ -129,30 +127,19 @@ data_upload	TIMESTAMP	Data de envio
 ---
 
 ## 🧭 Roadmap
-```
- Estrutura inicial do projeto
- Upload e leitura de dados
- Visualização de gráficos
- Geração de insights automáticos com IA
- Exportação em PDF/Excel
- Sistema de login completo
- Dashboard multiusuário
-```
+
+ - Estrutura inicial do projeto
+ - Upload e leitura de dados
+ - Visualização de gráficos
+ - Geração de insights automáticos com IA
+ - Exportação em PDF/Excel
+ - Sistema de login completo
+ - Dashboard multiusuário
+
 
 ---
 
-## 🧑‍💻 Autores
-```
-Pedro Lemos
-Estudante de Sistemas de Informação e desenvolvedor com foco em análise de sistemas, dados e inteligência artificial.
+## CONTATOS
+📧 Email [pedro.lemosmariano@gmail.com]
 
-Manoel Moura
-Estudante de Engenharia de Software e desenvolvedor.
-```
-
-## LINKS
-📧 [pedro.lemosmariano@gmail.com]
-
-🔗 LinkedIn
-
-🐙 GitHub
+🔗 LinkedIn [https://www.linkedin.com/in/pedrolemosmariano/]
