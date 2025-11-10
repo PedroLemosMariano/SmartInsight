@@ -18,6 +18,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 
 ## 🧩 Arquitetura do Projeto
 
+```
 SmartInsight/
 │
 ├── app/
@@ -34,7 +35,7 @@ SmartInsight/
 ├── data/ # Armazena datasets temporários
 ├── requirements.txt # Dependências do projeto
 └── README.md
-
+```
 
 ---
 
@@ -87,44 +88,48 @@ streamlit run app/main.py
 ---
 
 ## 📈 Exemplo de Uso
-
+```
 Faça login no sistema.
 Faça upload de um arquivo de vendas (vendas.csv).
 O SmartInsight gera automaticamente gráficos de desempenho.
 Clique em "Gerar Insights" para obter uma análise textual com IA.
 Exporte o relatório completo em PDF ou Excel.
-
+```
 ---
 
 ## 💡 Exemplos de Insights Automáticos
+```
 "As vendas no setor Sul aumentaram 22% em setembro, impulsionadas pelo novo produto lançado no início do mês."
 "O faturamento total caiu 8% em outubro, principalmente devido à queda nas vendas da categoria eletrônicos."
+```
 
 ---
 
 ## 🧠 Estrutura do Banco de Dados (modelo simplificado)
 
 ### Tabela usuarios
-
+```
 Campo	Tipo	Descrição
 id	SERIAL PK	Identificador único
 nome	VARCHAR(100)	Nome do usuário
 email	VARCHAR(150)	Email para login
 senha	TEXT	Senha criptografada
+```
 
 ### Tabela datasets
-
+```
 Campo	Tipo	Descrição
 id	SERIAL PK	Identificador do dataset
 usuario_id	FK → usuarios.id	Dono do arquivo
 nome_arquivo	VARCHAR(200)	Nome do arquivo enviado
 caminho	TEXT	Caminho do arquivo armazenado
 data_upload	TIMESTAMP	Data de envio
- 
+ ```
+
 ---
 
 ## 🧭 Roadmap
-
+```
  Estrutura inicial do projeto
  Upload e leitura de dados
  Visualização de gráficos
@@ -132,17 +137,20 @@ data_upload	TIMESTAMP	Data de envio
  Exportação em PDF/Excel
  Sistema de login completo
  Dashboard multiusuário
+```
 
 ---
 
 ## 🧑‍💻 Autores
-
+```
 Pedro Lemos
 Estudante de Sistemas de Informação e desenvolvedor com foco em análise de sistemas, dados e inteligência artificial.
 
 Manoel Moura
 Estudante de Engenharia de Software e desenvolvedor.
+```
 
+## LINKS
 📧 [pedro.lemosmariano@gmail.com]
 
 🔗 LinkedIn
