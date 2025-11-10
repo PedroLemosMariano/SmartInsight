@@ -1,6 +1,7 @@
-streamlit
-sqlalchemy
+flask
+flask_sqlalchemy
+flask_migrate
 psycopg2-binary
 pandas
 openai
-plotly
+sqlalchemy

@@ -1,25 +1,20 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, LargeBinary, func
-from sqlalchemy.orm import relationship
-from app.backend.db import Base
+# SMTH/bd/models.py
+from datetime import datetime
+from SMTH.backend.db import db
 
-class Usuario(Base):
+class Usuario(db.Model):
     __tablename__ = "usuarios"
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    senha = db.Column(db.String(200), nullable=False)
+    datasets = db.relationship("Dataset", back_populates="usuario", cascade="all, delete")
 
-    id = Column(Integer, primary_key=True, index=True)
-    nome = Column(String, nullable=False)
-    email = Column(String, unique=True, nullable=False)
-    senha = Column(String, nullable=False)
-
-    datasets = relationship("Dataset", back_populates="usuario")
-
-
-class Dataset(Base):
+class Dataset(db.Model):
     __tablename__ = "datasets"
-
-    id = Column(Integer, primary_key=True, index=True)
-    usuario_id = Column(Integer, ForeignKey("usuarios.id"))
-    nome = Column(String, nullable=False)
-    data_upload = Column(DateTime(timezone=True), server_default=func.now())
-    arquivo = Column(LargeBinary, nullable=False)
-
-    usuario = relationship("Usuario", back_populates="datasets")
+    id = db.Column(db.Integer, primary_key=True)
+    usuario_id = db.Column(db.Integer, db.ForeignKey("usuarios.id"))
+    nome = db.Column(db.String(200), nullable=False)
+    data_upload = db.Column(db.DateTime, default=datetime.utcnow)
+    arquivo = db.Column(db.LargeBinary, nullable=False)
+    usuario = db.relationship("Usuario", back_populates="datasets")
