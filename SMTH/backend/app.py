@@ -2,6 +2,8 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from SMTH.utils.config import DB_CONFIG
+from SMTH.backend.db import db
+
 
 db = SQLAlchemy()
 migrate = Migrate()

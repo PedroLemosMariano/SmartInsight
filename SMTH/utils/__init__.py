@@ -21,9 +21,10 @@ def create_app():
     migrate.init_app(app, db)
 
     # Importa rotas
-    from app.routes.auth_routes import auth_bp
-    from app.routes.dataset_routes import dataset_bp
-    from app.routes.analysis_routes import analysis_bp
+    from SMTH.routes.auth_routes import auth_bp
+    from SMTH.routes.dataset_routes import dataset_bp
+    from SMTH.routes.analysis_routes import analysis_bp
+
 
     app.register_blueprint(auth_bp, url_prefix="/auth")
     app.register_blueprint(dataset_bp, url_prefix="/datasets")
