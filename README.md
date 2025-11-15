@@ -20,7 +20,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 
 | Diretório / Arquivo | Descrição |
 |----------------------|------------|
-| **SMI/** | Diretório raiz do projeto |
+| **SMTH/** | Diretório raiz do projeto |
 | ├── **app/** | Contém os módulos principais da aplicação |
 | │ ├── `main.py` | Ponto de entrada da aplicação (Flask) |
 | │ ├── `dashboard.py` | Visualização de gráficos e relatórios |
