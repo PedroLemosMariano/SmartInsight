@@ -1,6 +1,6 @@
-# 🧠 SmartInsight – Sistema Inteligente de Análise de Dados Empresariais
+# 🧠 GatsBI – Sistema Inteligente de Análise de Dados Empresariais
 
-O **SmartInsight** é uma plataforma interativa desenvolvida em **Python** que permite importar, visualizar e analisar dados empresariais de forma automatizada e inteligente.  
+O **GatsBI** é uma plataforma interativa desenvolvida em **Python** que permite importar, visualizar e analisar dados empresariais de forma automatizada e inteligente.  
 Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *insights* com IA, o sistema auxilia analistas e gestores a tomarem decisões mais assertivas com base em dados reais.
 
 ---
@@ -20,7 +20,7 @@ Com suporte a gráficos dinâmicos, relatórios automáticos e geração de *ins
 
 | Diretório / Arquivo | Descrição |
 |----------------------|------------|
-| **SmartInsight/** | Diretório raiz do projeto |
+| **SMI/** | Diretório raiz do projeto |
 | ├── **app/** | Contém os módulos principais da aplicação |
 | │ ├── `main.py` | Ponto de entrada da aplicação (Flask) |
 | │ ├── `dashboard.py` | Visualização de gráficos e relatórios |
